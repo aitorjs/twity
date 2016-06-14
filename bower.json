@@ -1,0 +1,21 @@
+{
+  "name": "twity",
+  "description": "twity, clone of the social network of 140 characters",
+  "main": "server.js",
+  "authors": [
+    "Aitor Ibañez"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
