@@ -1,11 +1,13 @@
 # Twity
 
- A base project for ES2015 with Express, Browserify, all plugins needed for EcmaScript 2015 and pug.
+Clone of the social network of 140 characters using ES2015, yo-yo and Twitter Bootstrap.
 
 ## Installation
 
 ```sh
+$ git clone https://github.com/aitoribanez/twity.git
+$ cd twity/
 $ npm install
-$ npm start
 $ bower install
+$ npm start
 ```

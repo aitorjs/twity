@@ -7,7 +7,7 @@ app.set('view engine', 'pug');
 app.use(express.static('public'));
 
 app.get('/', function(req, res) {
-  res.render('index', { title: 'Starter' });
+  res.render('index', { title: 'Twity' });
 })
 
 app.listen(3000, function(err) {

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "gulp",
-    "start": "gulp assets && gulp watch & node server.js"
+    "start": "gulp assets && gulp build && gulp watch && node server.js"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
@@ -19,7 +19,6 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "bootstrap": "^3.3.6",
     "empty-element": "^1.0.0",
     "express": "^4.13.4",
     "page": "^1.7.1",
