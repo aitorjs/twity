@@ -1,0 +1,78 @@
+body {
+	background-color: #f5f8fa;  
+}
+
+.btn-blue {
+	background-color: #1b95e0;
+	color: #FFF;
+}
+.btn-blue:hover {
+	background-color: #0084B4;
+	color: #FFF;
+}
+
+#navbar-collapse-1 {
+	margin: 0 2% 0 3.8%;
+}
+
+#navbar-collapse-1 ul li a {
+	background-color: #FFF;
+
+}
+#navbar-collapse-1 ul li a:hover  {
+	border-bottom: 3px solid #1b95e0;
+	color: #1b95e0;
+	/*height:19.3%;*/
+}
+
+#navbar-collapse-1 ul li.active {
+	border-bottom: 3px solid #1b95e0;
+}
+#navbar-collapse-1 ul li.active a {
+	color: #1b95e0;
+}
+#navbar-collapse-1 ul li.active a:hover {
+	border: 0;
+	height:inherit;
+}
+
+.navbar-default {
+	border-color: #FFF;
+    border: 1px solid #e1e8ed;
+    background-color: #FFF;
+}
+
+.container-fluid {
+    padding-right: 40px;
+}
+
+#searchFormValue {
+	background-color: #f5f8fa;
+	border: 1px solid #e1e8ed;
+}
+
+#searchForm .form-group {
+	position: relative;
+	margin-right:-5px;
+}
+#searchForm .form-group input {
+	padding-right: 50px;
+    border-radius: 14px;
+}
+#searchForm .form-group i {
+	position: absolute;
+	right: 0px;
+	padding: 10px 12px;
+	pointer-events: none;
+}
+
+#avatar .btn {
+	border: 0;
+}
+#avatar .btn:hover {
+	background-color: #FFF;
+}
+#avatar .btn img{
+	margin: -5px;
+	border-radius: 5px;
+}

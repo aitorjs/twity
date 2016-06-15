@@ -31,6 +31,12 @@ function compile(watch) {
   rebundle();
 }
 
+gulp.task('assets', function() {
+  gulp
+    .src('src/styles.css')
+    .pipe(gulp.dest('public'));
+})
+
 gulp.task('build', function() {
   return compile();
 })

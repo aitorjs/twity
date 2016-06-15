@@ -7,4 +7,5 @@
 ```sh
 $ npm install
 $ npm start
+$ bower install
 ```

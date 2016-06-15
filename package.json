@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "gulp",
-    "start": "gulp watch & node server.js"
+    "start": "gulp assets && gulp watch & node server.js"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
