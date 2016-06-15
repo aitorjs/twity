@@ -42,6 +42,12 @@ body {
     background-color: #FFF;
 }
 
+.navbar-center {
+   display: inline-block !important;
+    margin-left: 17%;
+    margin-top:10px;
+}
+
 .container-fluid {
     padding-right: 40px;
 }
@@ -66,6 +72,12 @@ body {
 	pointer-events: none;
 }
 
+#avatar ul.dropdown-menu li a:hover {
+    border: 0;
+    color: #FFF;
+    background-color: #1b95e0;
+}
+
 #avatar .btn {
 	border: 0;
 }
@@ -76,3 +88,4 @@ body {
 	margin: -5px;
 	border-radius: 5px;
 }
+

@@ -2,7 +2,7 @@ var yo = require('yo-yo');
 var empty = require('empty-element');
 
 
-var el = yo`<nav class="navbar navbar-default">
+var el = yo`<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
@@ -39,6 +39,8 @@ var el = yo`<nav class="navbar navbar-default">
         </li>
       </ul>
 
+      <img src="/images/twitter_ico.png" title="logo" alt="logo" height="32" width="32" class="navbar-center"/>
+     
       <ul class="nav navbar-nav navbar-right">
         <li>
           <div class="dropdown" id="avatar">
@@ -46,11 +48,17 @@ var el = yo`<nav class="navbar navbar-default">
               <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_normal.jpeg" height="32" width="32" />
             </button>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+              <li><a href="#"><strong>Aitor Ibañez</strong><br>Profila ikusi</a></li>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">Zerrendak</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Laguntza</a></li>
+              <li><a href="#">Teklatu lasterbideak</a></li>
+              <li><a href="#">Iragariak</a></li>
+              <li><a href="#">Azterketak</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Ezarpenak</a></li>
+              <li><a href="#">Saioa itxi</a></li>
             </ul>
           </div>
         </li>

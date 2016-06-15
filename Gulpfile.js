@@ -26,8 +26,6 @@ function compile(watch) {
       .pipe(gulp.dest('public'));
   }
 
-
-
   rebundle();
 }
 
@@ -35,6 +33,10 @@ gulp.task('assets', function() {
   gulp
     .src('src/styles.css')
     .pipe(gulp.dest('public'));
+
+  gulp
+    .src('src/images/*')
+    .pipe(gulp.dest('public/images'));
 })
 
 gulp.task('build', function() {
