@@ -1,3 +1,4 @@
+
 var gulp = require('gulp');
 var babel = require('babelify');
 var browserify = require('browserify');
@@ -73,6 +74,7 @@ gulp.task('watch', function() {
   return compile(true);
 })
 
-
+gulp.task('dev', ['assets', 'build', 'watch' ]);
 
 gulp.task('default', ['build']);
+
