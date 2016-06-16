@@ -4,6 +4,18 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var watchify = require('watchify');
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
+
+var _css = [
+  './node_modules/bootstrap/dist/css/bootstrap.css', 
+  './node_modules/font-awesome/css/font-awesome.css',
+  './src/styles.css'
+];
+
+var _js = [
+  './node_modules/jquery/dist/jquery.js', 
+  './node_modules/bootstrap/dist/js/bootstrap.js'
+];
 
 function compile(watch) {
   var bundle = browserify('./src/index.js', {debug: true});
@@ -30,10 +42,24 @@ function compile(watch) {
 }
 
 gulp.task('assets', function() {
+  // CSS
   gulp
-    .src('src/styles.css')
-    .pipe(gulp.dest('public'));
+    .src(_css)
+    .pipe(concat('app.css'))
+    .pipe(gulp.dest('./public/'));
 
+  // Javascript
+   gulp
+    .src(_js)
+    .pipe(concat('lib-app.js'))
+    .pipe(gulp.dest('./public/'));
+
+  // Fonts
+  gulp
+    .src('./node_modules/bootstrap/dist/fonts/*')
+    .pipe(gulp.dest('./public/fonts'));
+
+  // Images
   gulp
     .src('src/images/*')
     .pipe(gulp.dest('public/images'));
