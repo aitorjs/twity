@@ -1,9 +1,7 @@
 var yo = require('yo-yo');
 var empty = require('empty-element');
 
-
-var el = yo`<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
+var el = yo`<div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -17,7 +15,7 @@ var el = yo`<nav class="navbar navbar-default navbar-fixed-top">
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active">
-          <a href="#">
+          <a href="/">
             <i class="glyphicon glyphicon-home" aria-hidden="true" style="font-size:1.3em;vertical-align: top;"></i> 
             <span style="font-size:1em;vertical-align: bottom">Hasiera</span>
             <span class="sr-only">(current)</span>
@@ -25,7 +23,7 @@ var el = yo`<nav class="navbar navbar-default navbar-fixed-top">
         </li>
 
         <li>
-          <a href="#">
+          <a href="/profile">
             <i class="glyphicon glyphicon-bell" aria-hidden="true" style="font-size:1.3em;vertical-align: top;"></i> 
             <span style="font-size:1em;vertical-align: bottom">Jakinarazpenak</span>
           </a>
@@ -79,14 +77,10 @@ var el = yo`<nav class="navbar navbar-default navbar-fixed-top">
           <input type="text" class="form-control" placeholder="Bilatu Twitterren" id="searchFormValue">
         </div>
       </form>
-  </div>
-</nav>`;
+  </div>`;
 
-
-module.exports = function nav(ctx, next) {
-  console.log("nav");
-  var container = document.getElementById('header-container');
-  empty(container).appendChild(el);
-  next();
-
-}
+  module.exports = function nav() {
+    console.log("NAV");
+    var container = document.getElementById('nav');
+    empty(container).appendChild(el);
+  }

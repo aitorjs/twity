@@ -10,6 +10,10 @@ app.get('/', function(req, res) {
   res.render('index', { title: 'Twity' });
 })
 
+app.get('/profile', function(req, res) {
+  res.render('index', { title: 'Profile' });
+})
+
 app.listen(3000, function(err) {
   if (err) return console.log('ERROR'), process.exit(1);
 

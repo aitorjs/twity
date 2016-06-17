@@ -1,9 +1,13 @@
 var page = require('page');
 var empty = require('empty-element');
-var nav = require('../nav');
 var header = require('../header');
+var nav = require('../nav');
 
-page('/', nav, header, function(ctx, next) {
-  console.log("FINn!");
+page('/', header, function(ctx, next) {
+  empty(document.getElementById('header'));
+
+  nav();
+
+  console.log("end");
 
 })
