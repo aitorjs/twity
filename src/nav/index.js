@@ -15,7 +15,7 @@ var el = yo`<div class="container-fluid">
     <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li class="active">
-          <a href="/">
+          <a href="./">
             <i class="glyphicon glyphicon-home" aria-hidden="true" style="font-size:1.3em;vertical-align: top;"></i> 
             <span style="font-size:1em;vertical-align: bottom">Hasiera</span>
             <span class="sr-only">(current)</span>
@@ -23,7 +23,7 @@ var el = yo`<div class="container-fluid">
         </li>
 
         <li>
-          <a href="/profile">
+          <a href="./profile">
             <i class="glyphicon glyphicon-bell" aria-hidden="true" style="font-size:1.3em;vertical-align: top;"></i> 
             <span style="font-size:1em;vertical-align: bottom">Jakinarazpenak</span>
           </a>
@@ -79,8 +79,12 @@ var el = yo`<div class="container-fluid">
       </form>
   </div>`;
 
-  module.exports = function nav() {
+
+ var container = document.getElementById('nav');
+ empty(container).appendChild(el);
+ 
+  /* module.exports = function nav() {
     console.log("NAV");
     var container = document.getElementById('nav');
     empty(container).appendChild(el);
-  }
+  } */

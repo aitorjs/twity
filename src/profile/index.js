@@ -5,11 +5,4 @@ var header = require('../header');
 
 page('/profile', header, function(ctx, next) {
 
-
-
-  nav();
-
-  
-  // header(ctx,next);
-
 })
