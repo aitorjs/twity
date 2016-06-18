@@ -10,6 +10,9 @@ body {
 	background-color: #0084B4;
 	color: #FFF;
 }
+.navbar {
+  margin-bottom: 0;
+}
 
 #navbar-collapse-1 {
 	margin: 0 2% 0 3.8%;
@@ -89,6 +92,15 @@ body {
 	border-radius: 5px;
 }
 
-#header {
-	margin-top: 5%;
+#profile-background {
+	background-color: #DD2E44;
+	height:175px;
+	width:100%;
+}
+#profile-background img {
+	margin: 50px;
+	height:200px;
+	width:200px;
+	border-radius: 10px;
+    border: 5px solid #fff;
 }
