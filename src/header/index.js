@@ -5,25 +5,26 @@ var el = yo`<div>
 <div id="profile-background">
   <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_400x400.jpeg">
 </div>
-<div class="row">
-	<div class="col-md-3"></div>
-  	<div class="col-md-1">
-  		TXIOAK <br>2.918
+<div class="row" id="profile-numbers">
+	<div class="col-md-6 col-md-offset-3">
+  		<ul>
+	  		<li>TXIOAK<br>
+	  			<span class="relevant">2.918</span></li>
+	  		<li>JARRAITZEN<br>
+	  			<span class="relevant">2.918</span></li>
+	  		<li>JARRAITZAILEAK<br>
+	  			<span class="relevant">29</span></li>
+	  		<li>ATSEGITEAK<br>
+	  			<span class="relevant">29</span></li>
+	  		<li>ZERRENDAK<br>
+	  			<span class="relevant">29</span></li>
+ 		</ul>
+ 	</div>
+  	<div class="col-md-1 col-md-offset-1">
+  		<button type="button" class="btn btn-grey">
+            Profila aldatu
+          </button>
   	</div>
-  	<div class="col-md-1">
-  		JARRAITZEN <br>2.918
-  	</div>
-  	<div class="col-md-1">
-  		JARRAITZAILEAK <br>29
-  	</div>
-  	<div class="col-md-1">
-  		ATSEGITEAK <br>29
-  	</div>
-  	<div class="col-md-1">
-  		ZERRENDAK <br>5
-  	</div>
-  	<div class="col-md-2"></div>
-  	<div class="col-md-1">boton</div>
   </div>
 /div>`;
 

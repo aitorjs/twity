@@ -82,9 +82,3 @@ var el = yo`<div class="container-fluid">
 
  var container = document.getElementById('nav');
  empty(container).appendChild(el);
- 
-  /* module.exports = function nav() {
-    console.log("NAV");
-    var container = document.getElementById('nav');
-    empty(container).appendChild(el);
-  } */

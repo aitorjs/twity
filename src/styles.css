@@ -98,9 +98,40 @@ body {
 	width:100%;
 }
 #profile-background img {
-	margin: 50px;
+	margin-left: 90px;
+    margin-top: 50px;
 	height:200px;
 	width:200px;
 	border-radius: 10px;
-    border: 5px solid #fff;
+    border: 5px solid #FFF;
 }
+#profile-numbers {
+	color:grey;
+	text-align:center;
+	padding-top:10px;	
+	background-color: #FFF;
+	border-bottom: 1px solid #e1e8ed;
+}
+#profile-numbers ul {
+	display: flex;
+}
+#profile-numbers ul li {
+	margin-right:30px;
+	list-style-type: none;
+	font-size: .9em;
+}
+#profile-numbers .relevant {
+	color:#dd2e44;
+	font-size:1.5em;
+}
+#profile-numbers button {
+	margin-left: 25px;
+    border: 1px solid #e1e8ed;
+    background-color: #f7f9fb;
+    font-weight: 900;
+}
+#profile-numbers button:hover {
+    background-color: #f0f4f6;
+}
+
+
