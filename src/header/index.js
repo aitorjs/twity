@@ -8,7 +8,7 @@ var el = yo`<div>
 <div class="row" id="profile-numbers">
 	<div class="col-md-6 col-md-offset-3">
   		<ul>
-	  		<li>TXIOAK<br>
+	  		<li>TXIOAKa<br>
 	  			<span class="relevant">2.918</span></li>
 	  		<li>JARRAITZEN<br>
 	  			<span class="relevant">2.918</span></li>

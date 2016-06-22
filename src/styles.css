@@ -133,4 +133,31 @@ body {
     background-color: #f0f4f6;
 }
 
+#main-container {
+	margin-top:20px;
+}
+#main-container #name {
+	font-weight: 900;
+	font-size: 1.5em;
+	margin-bottom: -5px;
+}
+#main-container #name a{
+	color:#000;
+}
+#main-container #nickname a{
+	color:grey;
+}
+#main-container #bio a, #main-container #metadata a {
+	color:#dd2e44;
+}
+#main-container #metadata p {
+	margin-bottom: 5px;
+	vertical-align: top;
+}
+#main-container #metadata p i{
+	vertical-align: top;
+}
+#main-container #metadata p span{
+	vertical-align: bottom;
+}
 
