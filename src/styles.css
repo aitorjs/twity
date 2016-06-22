@@ -96,14 +96,16 @@ body {
 	background-color: #DD2E44;
 	height:175px;
 	width:100%;
+	margin-top: 54px;
 }
 #profile-background img {
     margin-left: 103px;
-    margin-top: 45px;
+    margin-top: 65px;
     height: 211px;
     border-radius: 10px;
     border: 5px solid #FFF;
 }
+
 #profile-numbers {
 	color:grey;
 	text-align:center;
@@ -113,11 +115,17 @@ body {
 }
 #profile-numbers ul {
 	display: flex;
+	margin-bottom:0;
 }
 #profile-numbers ul li {
-	margin-right:30px;
-	list-style-type: none;
-	font-size: .9em;
+	margin-right: 30px;
+    padding-bottom: 10px;
+    list-style-type: none;
+    font-size: .9em;
+}
+#profile-numbers ul li#relevant {
+    border-bottom: 3px solid red;
+    width: 10%;
 }
 #profile-numbers .relevant {
 	color:#dd2e44;
@@ -136,10 +144,14 @@ body {
 #main-container {
 	margin-top:20px;
 }
+#main-container a {
+	color:#dd2e44;
+}
 #main-container #name {
 	font-weight: 900;
 	font-size: 1.5em;
 	margin-bottom: -5px;
+	margin-top: 20px;
 }
 #main-container #name a{
 	color:#000;
@@ -147,17 +159,23 @@ body {
 #main-container #nickname a{
 	color:grey;
 }
-#main-container #bio a, #main-container #metadata a {
-	color:#dd2e44;
-}
 #main-container #metadata p {
 	margin-bottom: 5px;
 	vertical-align: top;
 }
-#main-container #metadata p i{
+#main-container #metadata p i, #main-container #multimedia p i{
 	vertical-align: top;
+	color: grey;
 }
 #main-container #metadata p span{
 	vertical-align: bottom;
 }
-
+#main-container #multimedia {
+	margin-top:20px;
+}
+#main-container #multimedia .col-sm-4{
+	padding-left:0;
+}
+#main-container #multimedia img{
+	border-radius: 5px;
+}

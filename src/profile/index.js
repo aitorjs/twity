@@ -25,6 +25,30 @@ page('/profile', header, function(ctx, next) {
           <span>2010(e)ko otsailak(e)tik Twitterren</span> 
         </p>
       </div>
+      <div id="multimedia">
+        <p>
+          <i class="glyphicon glyphicon-facetime-video" aria-hidden="true"></i>
+          <a href="#">Argazkiak eta bideoak</a>
+        </p>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+        <div class="col-sm-4">
+          <img src="https://pbs.twimg.com/media/CkdfwvpWsAA9huU.jpg:thumb" alt="alt" title="title" height="83px" />
+        </div>
+      </div>
   	</div>
   	<div class="col-sm-6">B</div>
   	<div class="col-sm-3">C</div>
