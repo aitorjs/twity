@@ -8,16 +8,35 @@ var el = yo`<div>
 <div class="row" id="profile-numbers">
 	<div class="col-md-6 col-md-offset-3">
   		<ul>
-	  		<li id="relevant">TXIOAK<br>
-	  			<span id="relevant">2.918</span></li>
-	  		<li>JARRAITZEN<br>
-	  			<span>2.918</span></li>
-	  		<li>JARRAITZAILEAK<br>
-	  			<span>29</span></li>
-	  		<li>ATSEGITEAK<br>
-	  			<span>29</span></li>
-	  		<li>ZERRENDAK<br>
-	  			<span>29</span></li>
+	  		<li id="relevant">
+	  			<a href="#">
+	  			  TXIOAK<br>
+	  			  <span id="relevant">2.918</span></li>
+          </a>
+	  		<li>
+          <a href="#">
+            JARRAITZEN<br>
+	  			  <span>2.918</span>
+          </a>
+        </li>
+	  		<li>
+          <a href="#">
+            JARRAITZAILEAK<br>
+	  			  <span>29</span>
+          </a>
+        </li>
+	  		<li>
+          <a href="#">
+            ATSEGITEAK<br>
+	  			  <span>29</span>
+          </a>
+        </li>
+	  		<li>
+          <a href="#">
+            ZERRENDAK<br>
+	  			  <span>29</span>
+          </a>
+        </li>
  		</ul>
  	</div>
   	<div class="col-md-1 col-md-offset-1">

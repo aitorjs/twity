@@ -62,11 +62,46 @@ page('/profile', header, function(ctx, next) {
           <a href="#">Media</a>
         </li>
       </ul>
-      <div class="row">
-        <div class="col-sm-3">A</div>
-        <div class="col-sm-9">B</div>
+      <div class="row twitCard">
+        <div class="col-sm-1">
+          <i class="glyphicon glyphicon-link" aria-hidden="true"></i>
+          <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_bigger.jpeg" />
+        </div>
+        <div class="col-sm-10 right">
+          <p id="pinned">Pinned Tweet</p>
+          <p>
+            <span class="name">
+              <a href="#">Aitor Ibañez</a>
+            </span>
+            <span class="username">
+              <a href="#">@aitoribanez_</a>
+            </span>
+            <span class="data">
+              <a href="#">Jun 6</a>
+            </span>
+          </p>
+        </div>
       </div>
-      Es un hecho establecido hace demasiado tiempo que un lector se distraerá con el contenido del texto de un sitio mientras que mira su diseño. El punto de usar Lorem Ipsum es que tiene una distribución más o menos normal de las letras, al contrario de usar textos como por ejemplo "Contenido aquí, contenido aquí". Estos textos hacen parecerlo un español que se puede leer. Muchos paquetes de autoedición y editores de páginas web usan el Lorem Ipsum como su texto por defecto, y al hacer una búsqueda de "Lorem Ipsum" va a dar por resultado muchos sitios web que usan este texto si se encuentran en estado de desarrollo. Muchas versiones han evolucionado a través de los años, algunas veces por accidente, otras veces a propósito (por ejemplo insertándole humor y cosas por el estilo).
+      <div class="row twitCard">
+        <div class="col-sm-1">
+          <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_bigger.jpeg" />
+        </div>
+        <div class="col-sm-10 right">
+          <p>
+            <span class="name">
+              <a href="#">Aitor Ibañez</a>
+            </span>
+            <span class="username">
+              <a href="#">@aitoribanez_</a>
+            </span>
+            <span class="data">
+              <a href="#">Jun 6</a>
+            </span>
+          </p>
+        </div>
+      </div>
+
+
     </div>
   	<div class="col-sm-3">C</div>
   </div>`;

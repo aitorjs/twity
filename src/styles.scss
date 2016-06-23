@@ -122,12 +122,13 @@ body {
 	border-bottom: 1px solid $clear-grey;
 	margin: 0;
 }
+
 #profile-numbers ul {
 	display: flex;
 	margin-bottom:0;
 }
 #profile-numbers ul li {
-	margin-right: 30px;
+  margin-right: 30px;
   list-style-type: none;
   font-size: .8em;
 }
@@ -135,6 +136,17 @@ body {
   border-bottom: 3px solid $dark-red;
   width: 10%;
   color:#000;
+}
+#profile-numbers a {
+  color: $grey;
+}
+#profile-numbers a:hover {
+  color: $dark-red;
+  text-decoration:none;
+}
+#profile-numbers ul li#relevant a:hover{
+  color:#000;
+  text-decoration:none;
 }
 #profile-numbers span {
   color: $dark-red;
@@ -213,4 +225,50 @@ body {
 }
 #content li#relevant a {
   color: #000;
+}
+
+.twitCard {
+	margin: 10px;
+	border-bottom: 1px solid $clear-grey;
+	padding-top:10px;
+	padding-bottom:10px;
+}
+.twitCard i {
+	margin-left:188%;
+	margin-bottom:10px;
+	font-size:.9em;
+}
+.twitCard img {
+	height:48px;
+	border-radius:5px;
+}
+.twitCard .right {
+	margin-left:10px;
+}
+.twitCard .name {
+	font-weight:900;
+	margin-top:-15px;
+}
+.twitCard .name a{
+	color:#000 !important;
+}
+.twitCard .username a{
+	color:#777 !important;
+}
+.twitCard .name a:hover, .twitCard .data a:hover{
+	color:$dark-red !important;
+}
+.twitCard .username a:hover{
+	text-decoration:none;
+}
+.twitCard .data a{
+	color:#777 !important;
+}
+.twitCard .username {
+	color:grey;
+}
+.twitCard #pinned {
+	margin-bottom:3px;
+	color:grey;
+	font-size:.9em;
 }
