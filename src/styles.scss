@@ -120,6 +120,7 @@ body {
 	padding-top:10px;	
 	background-color: $black;
 	border-bottom: 1px solid $clear-grey;
+	margin: 0;
 }
 #profile-numbers ul {
 	display: flex;
@@ -127,17 +128,21 @@ body {
 }
 #profile-numbers ul li {
 	margin-right: 30px;
-    padding-bottom: 10px;
-    list-style-type: none;
-    font-size: .9em;
+  list-style-type: none;
+  font-size: .8em;
 }
 #profile-numbers ul li#relevant {
-    border-bottom: 3px solid red;
-    width: 10%;
+  border-bottom: 3px solid $dark-red;
+  width: 10%;
+  color:#000;
 }
-#profile-numbers .relevant {
-	color: $dark-red;
+#profile-numbers span {
+  color: $dark-red;
 	font-size:1.5em;
+}
+#profile-numbers span#relevant {
+  color: #000;
+  font-size:1.5em;
 }
 #profile-numbers button {
 	margin-left: 25px;
@@ -159,7 +164,7 @@ body {
 	font-weight: 900;
 	font-size: 1.5em;
 	margin-bottom: -5px;
-	margin-top: 20px;
+	margin-top: 40px;
 }
 #main-container #name a{
 	color:#000;
@@ -186,4 +191,26 @@ body {
 }
 #main-container #multimedia img{
 	border-radius: 5px;
+}
+
+#content {
+  background-color: $black;
+  border-radius: 10px;
+  border: 1px solid $clear-grey;
+  padding:0;
+}
+#content ul {
+  display: flex;
+  padding-left:15px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-bottom: 1px solid $clear-grey;
+}
+#content ul li {
+  list-style-type: none;
+  font-size:1.3em;
+  padding-right: 40px;
+}
+#content li#relevant a {
+  color: #000;
 }

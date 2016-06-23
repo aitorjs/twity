@@ -9,15 +9,15 @@ var el = yo`<div>
 	<div class="col-md-6 col-md-offset-3">
   		<ul>
 	  		<li id="relevant">TXIOAK<br>
-	  			<span class="relevant">2.918</span></li>
+	  			<span id="relevant">2.918</span></li>
 	  		<li>JARRAITZEN<br>
-	  			<span class="relevant">2.918</span></li>
+	  			<span>2.918</span></li>
 	  		<li>JARRAITZAILEAK<br>
-	  			<span class="relevant">29</span></li>
+	  			<span>29</span></li>
 	  		<li>ATSEGITEAK<br>
-	  			<span class="relevant">29</span></li>
+	  			<span>29</span></li>
 	  		<li>ZERRENDAK<br>
-	  			<span class="relevant">29</span></li>
+	  			<span>29</span></li>
  		</ul>
  	</div>
   	<div class="col-md-1 col-md-offset-1">
