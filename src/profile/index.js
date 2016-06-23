@@ -62,6 +62,7 @@ page('/profile', header, function(ctx, next) {
           <a href="#">Media</a>
         </li>
       </ul>
+
       <div class="row twitCard">
         <div class="col-sm-1">
           <i class="glyphicon glyphicon-link" aria-hidden="true"></i>
@@ -80,10 +81,25 @@ page('/profile', header, function(ctx, next) {
               <a href="#">Jun 6</a>
             </span>
           </p>
+          <p id="twit-title">Como proteger Let's encrypt</p>
+          <div id="extra">
+            <img src="https://o.twimg.com/2/proxy.jpg?t=HBhKaHR0cDovL2Jsb2cuYWl0b3JpYmFuZXouY29tL2NvbnRlbnQvaW1hZ2VzLzIwMTYvMDYvaHR0cHMtc2ljaGVyLXN1cmZlbi5qcGcUwh0UuA8cFIQGFJQDAAAWABIA&s=CIr5rMs-zLvxQirrFQJTV_x3uFedy0YjVdiGQMEVE_0" id="extra-img" />
+            <p id="extra-title">Como proteger Apache con Let's encrypt</p>
+            <p id="extra-content">Desde hace unos meses, Let's Encrypt esta en beta pública para que protejamos nuestras aplicacione con certificados SSL validaos por los...</p>
+            <p id="extra-url">blog.aitoribanez.com</p>
+          </div>
+          <p id="social">
+            <i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-refresh" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></i>
+          </p>
         </div>
       </div>
+
       <div class="row twitCard">
         <div class="col-sm-1">
+          <i class="glyphicon glyphicon-link" aria-hidden="true"></i>
           <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_bigger.jpeg" />
         </div>
         <div class="col-sm-10 right">
@@ -97,6 +113,19 @@ page('/profile', header, function(ctx, next) {
             <span class="data">
               <a href="#">Jun 6</a>
             </span>
+          </p>
+          <p id="twit-title">Como proteger Let's encrypt</p>
+          <div id="extra">
+            <img src="https://o.twimg.com/2/proxy.jpg?t=HBhKaHR0cDovL2Jsb2cuYWl0b3JpYmFuZXouY29tL2NvbnRlbnQvaW1hZ2VzLzIwMTYvMDYvaHR0cHMtc2ljaGVyLXN1cmZlbi5qcGcUwh0UuA8cFIQGFJQDAAAWABIA&s=CIr5rMs-zLvxQirrFQJTV_x3uFedy0YjVdiGQMEVE_0" id="extra-img" />
+            <p id="extra-title">Como proteger Apache con Let's encrypt</p>
+            <p id="extra-content">Desde hace unos meses, Let's Encrypt esta en beta pública para que protejamos nuestras aplicacione con certificados SSL validaos por los...</p>
+            <p id="extra-url">blog.aitoribanez.com</p>
+          </div>
+          <p id="social">
+            <i class="glyphicon glyphicon-share-alt" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-refresh" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-heart" aria-hidden="true"></i>
+            <i class="glyphicon glyphicon-option-horizontal" aria-hidden="true"></i>
           </p>
         </div>
       </div>
