@@ -1,7 +1,7 @@
 require('babel-polyfill');
 var page = require('page');
 
-require('./nav');
+// require('./nav');
 require('./header');
 require('./homepage');
 require('./profile');

@@ -4,7 +4,7 @@
   "description": "twity, clone of the social network of 140 characters",
   "main": "server.js",
   "scripts": {
-    "build": "gulp",
+    "build": "browserify app.js > public/build.js -t babelify",
     "start": "gulp dev & node server.js"
   },
   "author": "Aitor Ibañez",
@@ -12,6 +12,7 @@
   "devDependencies": {
     "babel-polyfill": "^6.9.1",
     "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
     "babelify": "^7.3.0",
     "bootstrap-sass": "^3.3.6",
     "browserify": "^13.0.1",
@@ -29,6 +30,8 @@
     "jquery": "^2.2.4",
     "page": "^1.7.1",
     "pug": "^2.0.0-alpha7",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
     "yo-yo": "^1.2.1"
   }
 }
