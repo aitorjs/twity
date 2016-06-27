@@ -5,7 +5,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TwityTopHeaderLeft from './components/TwityTopHeaderLeft';
+import TwityNav from './components/TwityNav';
 
 ReactDOM.render(<TwityTopHeaderLeft />,
   document.getElementById('nav')
