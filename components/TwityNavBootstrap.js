@@ -21,30 +21,31 @@ export default class TwityNavBootstrap extends React.Component {
       <Navbar.Brand>
         <a href="#"></a>
       </Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
-    <Navbar.Collapse>
+    
       <Nav>
         <NavItem eventKey={1} href="/">
             <Glyphicon glyph="home" style={iHome} /> 
-            <span style={iText}> Hasiera</span>
+            <span style={iText} className="hidden-xs hidden-sm"> Hasiera</span>
             <span className="sr-only">(current)</span>
         </NavItem>
         <NavItem eventKey={2} href="/profile">
           <Glyphicon glyph="bell" style={iHome} />
-          <span style={iText}> Jakinarazpenak</span>
+          <span style={iText} className="hidden-xs hidden-sm"> Jakinarazpenak</span>
         </NavItem>
          <NavItem eventKey={4} href="/aaa">
             <Glyphicon glyph="inbox" style={iHome} />
-            <span style={iText}> Mezuak</span>
+            <span style={iText} className="hidden-xs hidden-sm"> Mezuak</span>
         </NavItem>
-        
+        <NavItem eventKey={1} href="/" className="hidden-xs hidden-sm">
+          <img src="/images/twitter_ico.png" className="navbar-center" title="logo" alt="logo" height="32" width="32" />
+        </NavItem>
       </Nav>
+
       <Nav pullRight>
         <NavItem eventKey={1}>
            <form className="navbar-form navbar-right" role="search" id="searchForm">
            <div className="form-group">
-             <input type="text" className="form-control" placeholder="Bilatu Twitterren" id="searchFormValue" />
+             <input type="text" className="form-control hidden-xs" placeholder="Bilatu Twitterren" id="searchFormValue" />
              <Glyphicon glyph="search" />
             </div>
           </form>
@@ -75,14 +76,14 @@ export default class TwityNavBootstrap extends React.Component {
          </NavItem>
 
         <NavItem eventKey={2} href="#" id="twitButton">
-          <Button bsStyle="primary" bsSize="default">
+          <Button bsStyle="primary">
             <i className="glyphicon glyphicon-inbox"></i>
-            Txiokatu
+            <span className="hidden-xs hidden-sm">Txiokatu</span>
           </Button>
         </NavItem>
        
       </Nav>
-    </Navbar.Collapse>
+    </Navbar.Header>
   </Navbar>
 	}
 }

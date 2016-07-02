@@ -10,7 +10,6 @@ $grey: #808080;
 body {
 	background-color: $white;  
 }
-
 .btn-blue {
 	background-color: $blue-color;
 	color: $black;
@@ -19,9 +18,21 @@ body {
 	background-color: #0084B4;
 	color: $black;
 }
+.navbar-right {
+  border-color:$black !important;
+}
+.navbar-right > li > a {
+  padding: 13px 3px;
+}
 .navbar {
   margin-bottom: 0;
   height: 55px;
+}
+.nav, .navbar-right {
+  display: flex;
+}
+.navbar-header {
+    float: inherit;
 }
 
 #navbar-collapse-1 {
@@ -55,15 +66,39 @@ body {
 }
 
 .navbar-center {
-   display: inline-block !important;
-    margin-left: 17%;
-    margin-top:10px;
+  margin-left: 400%;
+  margin-top: -5px;
 }
 
 .container-fluid {
-    padding-right: 40px;
+  padding-right: 40px;
 }
-
+/*@screen-md-min*/
+@media (max-width: 1200px) {
+  .navbar-center {
+    margin-left: 200%;
+  }
+}
+@media (max-width: 991px) {
+  #twitButton button {
+    height: 35px;
+  }
+  body {
+    background-color:red;
+  }
+}
+@media (max-width: 770px) {
+  body {
+    background-color:blue;
+  }
+  .navbar-right {
+    margin-top: -51px;
+    margin-left: 65%;
+  }
+  #searchForm .form-group span {
+    margin-top: 55px;
+  }
+}
 /* ReactJS */
 #searchFormValue {
 	background-color: $white;
@@ -83,7 +118,7 @@ body {
 }
 
 #dropdownMenu2.btn-default {
-	border-color: #fff;
+	border-color: $black;
 	margin-top:-10px;
 }
 #twitButton button {
