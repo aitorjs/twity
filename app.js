@@ -5,9 +5,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import TwityNav from './components/TwityNav';
-import TwityNavBootstrap from './components/TwityNavBootstrap';
+import TwityApp from './components/TwityApp';
 
-ReactDOM.render(<TwityNavBootstrap />,
-  document.getElementById('nav')
+ReactDOM.render(<TwityApp />,
+  document.getElementById('container')
 );
