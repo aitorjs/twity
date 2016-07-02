@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, ButtonToolbar, Button } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, ButtonToolbar, Button, DropdownButton, Dropdown, Glyphicon, FormGroup, FormControl } from 'react-bootstrap';
 
 var iHome = {
   fontSize: '1.3em',
@@ -16,7 +16,7 @@ var iText = {
 };
 
 export default class TwityNavBootstrap extends React.Component {	
-	render() { return <Navbar inverse fixedTop>
+	render() { return <Navbar fixedTop>
     <Navbar.Header>
       <Navbar.Brand>
         <a href="#"></a>
@@ -26,35 +26,59 @@ export default class TwityNavBootstrap extends React.Component {
     <Navbar.Collapse>
       <Nav>
         <NavItem eventKey={1} href="/">
-            <i className="glyphicon glyphicon-home" aria-hidden="true" style={iHome}></i> 
+            <Glyphicon glyph="home" style={iHome} /> 
             <span style={iText}> Hasiera</span>
             <span className="sr-only">(current)</span>
         </NavItem>
         <NavItem eventKey={2} href="/profile">
-            <i className="glyphicon glyphicon-bell" aria-hidden="true" style={iHome}></i> 
-            <span style={iText}> Jakinarazpenak</span>
+          <Glyphicon glyph="bell" style={iHome} />
+          <span style={iText}> Jakinarazpenak</span>
         </NavItem>
          <NavItem eventKey={4} href="/aaa">
-             <i className="glyphicon glyphicon-inbox" aria-hidden="true" style={iHome}></i>
+            <Glyphicon glyph="inbox" style={iHome} />
             <span style={iText}> Mezuak</span>
         </NavItem>
         
       </Nav>
       <Nav pullRight>
         <NavItem eventKey={1}>
-          SEARCH
+           <form className="navbar-form navbar-right" role="search" id="searchForm">
+           <div className="form-group">
+             <input type="text" className="form-control" placeholder="Bilatu Twitterren" id="searchFormValue" />
+             <Glyphicon glyph="search" />
+            </div>
+          </form>
         </NavItem>
-         <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-          <MenuItem eventKey={3.1}>Action</MenuItem>
-          <MenuItem eventKey={3.2}>Another action</MenuItem>
-          <MenuItem eventKey={3.3}>Something else here</MenuItem>
-          <MenuItem divider />
-          <MenuItem eventKey={3.3}>Separated link</MenuItem>
-        </NavDropdown>
-        <NavItem eventKey={2} href="#">
-           <ButtonToolbar>
-             <Button bsStyle="primary">Txiokatu</Button>
-          </ButtonToolbar>
+        
+        <NavItem eventKey={10}>
+          <Dropdown id="dropdownMenu2">
+            <Dropdown.Toggle noCaret>
+              <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_normal.jpeg" height="32" width="32" />
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="sdropdown-menu">
+              <MenuItem eventKey={0} href="#">
+                <strong>Aitor Ibañez</strong><br/>Profila ikusi
+              </MenuItem>
+              <MenuItem divider />
+              <MenuItem eventKey={1} href="#">Zerrendak</MenuItem>
+              <MenuItem divider />
+              <MenuItem eventKey={2} href="#">Laguntza</MenuItem>
+              <MenuItem eventKey={3} href="#" active>Teklatu lasterbideak</MenuItem>
+              <MenuItem eventKey={4} href="#">Iragarkiak</MenuItem>
+              <MenuItem eventKey={5} href="#">Azterketak</MenuItem>
+              <MenuItem divider />
+              <MenuItem eventKey={6} href="#">Ezarpenak</MenuItem>
+              <MenuItem eventKey={7} href="#">Saioa itxi</MenuItem>
+            </Dropdown.Menu>
+          </Dropdown>
+         </NavItem>
+
+        <NavItem eventKey={2} href="#" id="twitButton">
+          <Button bsStyle="primary" bsSize="default">
+            <i className="glyphicon glyphicon-inbox"></i>
+            Txiokatu
+          </Button>
         </NavItem>
        
       </Nav>

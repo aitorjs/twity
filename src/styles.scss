@@ -21,6 +21,7 @@ body {
 }
 .navbar {
   margin-bottom: 0;
+  height: 55px;
 }
 
 #navbar-collapse-1 {
@@ -63,25 +64,32 @@ body {
     padding-right: 40px;
 }
 
+/* ReactJS */
 #searchFormValue {
 	background-color: $white;
 	border: 1px solid $clear-grey;
 }
-
 #searchForm .form-group {
 	position: relative;
 	margin-right:-5px;
+	margin-top: -10px;
 }
 #searchForm .form-group input {
 	padding-right: 50px;
     border-radius: 14px;
 }
-#searchForm .form-group i {
-	position: absolute;
-	right: 0px;
-	padding: 10px 12px;
-	pointer-events: none;
+#searchForm .form-group span {
+	margin-left: -30px;
 }
+
+#dropdownMenu2.btn-default {
+	border-color: #fff;
+	margin-top:-10px;
+}
+#twitButton button {
+	margin-top: -5px;
+}
+/* END ReactJS */
 
 #avatar ul.dropdown-menu li a:hover {
     border: 0;
