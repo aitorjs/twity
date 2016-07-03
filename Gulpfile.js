@@ -82,7 +82,7 @@ gulp.task('watch', function() {
   return compile(true);
 })
 
-gulp.task('dev', ['assets', 'build', 'watch' ]);
-
+// gulp.task('dev', ['assets', 'build', 'watch' ]);
+gulp.task('dev', ['assets']);
 gulp.task('default', ['build']);
 

@@ -9,5 +9,6 @@ $ git clone https://github.com/aitoribanez/twity.git
 $ cd twity/
 $ npm install
 $ npm run build
+$ gulp dev
 Open index.html file using your favorite browser.
 ```
