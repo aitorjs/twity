@@ -8,7 +8,7 @@ import TwityAppLogo from './TwityAppLogo';
 import TwityTwitButton from './TwityTwitButton';
 import TwityNavDrop from './TwityNavDrop';
 
-export default class TwityNav extends React.Component {	
+export default  class TwityNav extends React.Component {	
 	render() {
 	  return <div className="container-fluid">
 

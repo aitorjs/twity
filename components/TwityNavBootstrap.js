@@ -4,7 +4,7 @@
  */
 
 import React from 'react';
-import { Navbar, Nav, NavItem, NavDropdown, MenuItem, ButtonToolbar, Button, DropdownButton, Dropdown, Glyphicon, FormGroup, FormControl } from 'react-bootstrap';
+import { Navbar, Nav, NavItem, NavDropdown, MenuItem, ButtonToolbar, Button, DropdownButton, Dropdown, Glyphicon, FormGroup, FormControl, Link } from 'react-bootstrap';
 
 var iHome = {
   fontSize: '1.3em',
@@ -22,22 +22,25 @@ export default class TwityNavBootstrap extends React.Component {
         <a href="#"></a>
       </Navbar.Brand>
     
+     
+      
       <Nav>
-        <NavItem eventKey={1} href="/">
+
+        <NavItem eventKey={1} href="#/">
             <Glyphicon glyph="home" style={iHome} /> 
             <span style={iText} className="hidden-xs hidden-sm"> Hasiera</span>
             <span className="sr-only">(current)</span>
         </NavItem>
-        <NavItem eventKey={2} href="/profile">
+        <NavItem eventKey={2} href="#/profile">
           <Glyphicon glyph="bell" style={iHome} />
           <span style={iText} className="hidden-xs hidden-sm"> Jakinarazpenak</span>
         </NavItem>
-         <NavItem eventKey={4} href="/aaa">
+         <NavItem eventKey={4} href="#/user">
             <Glyphicon glyph="inbox" style={iHome} />
             <span style={iText} className="hidden-xs hidden-sm"> Mezuak</span>
         </NavItem>
         <NavItem eventKey={1} href="/" className="hidden-xs hidden-sm">
-          <img src="/images/twitter_ico.png" className="navbar-center" title="logo" alt="logo" height="32" width="32" />
+          <img src="./public/images/twitter_ico.png" className="navbar-center" title="logo" alt="logo" height="32" width="32" />
         </NavItem>
       </Nav>
 

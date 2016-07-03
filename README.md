@@ -8,5 +8,6 @@ Clone of the social network of 140 characters using ES2015, yo-yo and Twitter Bo
 $ git clone https://github.com/aitoribanez/twity.git
 $ cd twity/
 $ npm install
-$ npm start
+$ npm run build
+Open index.html file using your favorite browser.
 ```

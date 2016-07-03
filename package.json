@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "browserify app.js > public/build.js -t babelify",
-    "start": "gulp dev & node server.js"
+    "dev": "gulp dev"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
@@ -24,15 +24,11 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "empty-element": "^1.0.0",
-    "express": "^4.13.4",
     "font-awesome": "^4.6.3",
     "jquery": "^2.2.4",
-    "page": "^1.7.1",
-    "pug": "^2.0.0-alpha7",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.5",
-    "react-dom": "^15.1.0",
-    "yo-yo": "^1.2.1"
+    "react-dom": "^15.1.0", 
+    "react-router": "^2.5.2"
   }
 }
