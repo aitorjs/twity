@@ -8,12 +8,6 @@ var rename = require('gulp-rename');
 var concat = require('gulp-concat');
 var sass = require('gulp-sass');
 
-/* var _css = [
-  './node_modules/bootstrap/dist/css/bootstrap.css', 
-  './node_modules/font-awesome/css/font-awesome.css',
-  './src/styles.css'
-]; */
-
 var _js = [
   './node_modules/jquery/dist/jquery.js', 
   './node_modules/bootstrap-sass/assets/javascripts/bootstrap.js'
@@ -45,11 +39,6 @@ function compile(watch) {
 
 gulp.task('assets', function() {
   // CSS
-  /* gulp
-    .src(_css)
-    .pipe(concat('app.css'))
-    .pipe(gulp.dest('./public/')); */
-
    gulp
     .src('./src/styles.scss')
     .pipe(sass())

@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "build": "browserify app.js > public/build.js -t babelify",
-    "dev": "gulp dev"
+    "deploy": "npm run build && gulp dev"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
