@@ -4,6 +4,7 @@
  */
 
 import React from 'react';
+import $ from 'jquery';
 
 import TwityNavBootstrap from './TwityNavBootstrap';
 import TwityProfileHeaderCard from './TwityProfileHeaderCard/TwityProfileHeaderCard';
@@ -22,6 +23,19 @@ export default class TwityApp extends React.Component {
     </div>
 	</div>
 	}
+
+  componentDidMount() {
+    read()
+      .then(function(data) {
+        console.log(data.name);
+    });
+
+    async function read () {
+      var url = `http://pokeapi.co/api/v1/sprite/1/`;
+      return await $.get(url);   
+    } 
+  }
+
 }
 
 
