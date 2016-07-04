@@ -10,30 +10,33 @@ import TwityNavBootstrap from './TwityNavBootstrap';
 import TwityProfileHeaderCard from './TwityProfileHeaderCard/TwityProfileHeaderCard';
 
 export default class TwityApp extends React.Component {	
-	
-  componentDidMount() {
-
-    read()
-    .then(function(res) {
-      console.log(res.data.name);
-    });
-
-    async function read () {
-      var url = `http://pokeapi.co/api/v1/sprite/1/`;
-      
-      return await 
-      axios
-      .get(url)
-      .then(function (response) {
-        return response;
-      })
-      .catch(function (error) {
-        console.log(error);
-      });
-    }
+	 constructor(props) {
+    super(props);
+    this.state = { d: {} }
+    this.read = this.read.bind(this);
   }
 
+  async read() {
+    try {
+        const url =  `http://pokeapi.co/api/v1/sprite/1/`;
+        const { data } = await axios.get(url);
+        this.setState({
+          d: data,
+        });
+      } catch (error) {
+        console.error(error);
+      }
+  }
+
+  componentDidMount() {
+
+    console.log("A");
+    console.log(this.state);
+    console.log("B");
+  }
+   
   render() { return <div>
+     {this.state.d.name}
     <br/><br/><br/><br/>
     <TwityNavBootstrap />
     <section id="header"></section>
