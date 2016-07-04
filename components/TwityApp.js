@@ -1,8 +1,3 @@
-
-/*
- * Module dependencies
- */
-
 import React from 'react';
 import axios from 'axios';
 
@@ -12,8 +7,8 @@ import TwityProfileHeaderCard from './TwityProfileHeaderCard/TwityProfileHeaderC
 export default class TwityApp extends React.Component {	
 	 constructor(props) {
     super(props);
-    this.state = { d: {} }
-    this.read = this.read.bind(this);
+    this.state = { d: null }
+    // this.read = this.read.bind(this);
   }
 
   async read() {
@@ -29,27 +24,27 @@ export default class TwityApp extends React.Component {
   }
 
   componentDidMount() {
-
-    console.log("A");
-    console.log(this.state);
-    console.log("B");
+    this.read();
   }
-   
-  render() { return <div>
-     {this.state.d.name}
-    <br/><br/><br/><br/>
-    <TwityNavBootstrap />
-    <section id="header"></section>
-    <div className="container">
-      <div className="row">
-        <section id="main-container">
-          {this.props.children}
-        </section>
+
+  render() { 
+    if (!this.state.d) {
+      return <div>loading</div>
+    }
+
+    return <div>
+      <br/><br/><br/><br/>
+      {this.state.d.name}
+
+      <TwityNavBootstrap />
+      <section id="header"></section>
+      <div className="container">
+        <div className="row">
+          <section id="main-container">
+            {this.props.children}
+          </section>
+        </div>
       </div>
     </div>
-  </div>
   }
-
 }
-
-
