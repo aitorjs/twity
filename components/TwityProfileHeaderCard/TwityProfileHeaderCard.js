@@ -1,4 +1,3 @@
-
 /*
  * Module dependencies
  */
@@ -13,17 +12,18 @@ import TwityProfileHeaderCardUrl from './TwityProfileHeaderCardUrl';
 import TwityProfileHeaderCardJoindate from './TwityProfileHeaderCardJoindate';
 
 export default class TwityProfileHeaderCard extends React.Component {	
-	render() { return <div>
-    <TwityProfileHeaderCardName />
-    <TwityProfileHeaderCardScreenname />
-    <TwityProfileHeaderCardBio />
+	render() { 
+    return <div> 
+      <TwityProfileHeaderCardName name={this.props.user.name} />
+      <TwityProfileHeaderCardScreenname screenname={this.props.user.screenname} />
+      <TwityProfileHeaderCardBio bio={this.props.user.bio} />
 
-    <div id="metadata">
-      <TwityProfileHeaderCardLocation />
-      <TwityProfileHeaderCardUrl />
-      <TwityProfileHeaderCardJoindate />
+      <div id="metadata">
+        <TwityProfileHeaderCardLocation location={this.props.user.location} />
+        <TwityProfileHeaderCardUrl url={this.props.user.url} />
+        <TwityProfileHeaderCardJoindate  joindate={this.props.user.joindate} />
+      </div>
     </div>
-  </div>
   }
 }
 

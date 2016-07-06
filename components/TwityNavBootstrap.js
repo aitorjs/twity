@@ -21,8 +21,6 @@ export default class TwityNavBootstrap extends React.Component {
       <Navbar.Brand>
         <a href="#"></a>
       </Navbar.Brand>
-    
-     
       
       <Nav>
 
@@ -57,7 +55,7 @@ export default class TwityNavBootstrap extends React.Component {
         <NavItem eventKey={10}>
           <Dropdown id="dropdownMenu2">
             <Dropdown.Toggle noCaret>
-              <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_normal.jpeg" height="32" width="32" />
+              <img src={this.props.img} height="32" width="32" />
             </Dropdown.Toggle>
 
             <Dropdown.Menu className="sdropdown-menu">

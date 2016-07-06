@@ -7,7 +7,7 @@ import React from 'react';
 
 export default class TwityProfileHeaderCardScreenname extends React.Component {	
 	render() { return <div>
-		<p id="nickname"><a href="#">@aitoribanez_</a></p>
+		<p id="nickname"><a href="#">@{this.props.screenname}</a></p>
 	</div>
 	}
 }
