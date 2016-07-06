@@ -8,10 +8,8 @@ import TwityProfileHeaderCard from './../components/TwityProfileHeaderCard/Twity
 
 export default class PageProfile extends React.Component {	
 	render() { 
-// console.log(this.props.user.user.name);
-console.log(this.props.children);
 		return <div className="col-sm-3">
-     	<TwityProfileHeaderCard  user="user" />
+		  <TwityProfileHeaderCard  key={this.props.d.user.id} user={this.props.d.user} />
    	</div>
 	}
 }

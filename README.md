@@ -11,3 +11,8 @@ $ npm install
 $ npm run deploy: Transpile from ES2015 to ES5 and copy assets (client JS, fonts, images and CSS) 
 - Open index.html file using your favorite browser.
 ```
+
+
+## Development notes
+
+- Passing props to routes: https://github.com/reactjs/react-router/issues/1531#issuecomment-146514399

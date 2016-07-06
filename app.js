@@ -18,21 +18,13 @@ class User extends React.Component {
   }
 }
 
-class NoMatch extends React.Component {
-  render() {
-    return <p>Esta pagina no matchea</p>
-  }
-}
-
-
 const routes =  <Router history={hashHistory}>
-              <Route component = {TwityApp}>
-                <Route path="/"/>
-                  <Route path="profile" component = {PageProfile} />
-                  <Route path="user" component = {User} />
-                  <Route path="*" component={PageHome}/>
+              <Route component={TwityApp}>
+                <Route path="/" component={PageHome} />
+                  <Route path="profile" component={PageProfile} />
+                  <Route path="user" component={User} />
+                  <Route path="*" component={PageHome} />
                 </Route>
-
               </Router>
 
 ReactDOM.render(routes, document.getElementById('container'));
