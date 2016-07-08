@@ -36,7 +36,7 @@ export default class TwityApp extends React.Component {
 
     return <div>
       <br/><br/><br/><br/>
-      <TwityNav img={this.state.d.user.img} />
+      <TwityNav img={this.state.d.user.img} name={this.state.d.user.name}/>
       <section id="header"></section>
       <div className="container">
         <div className="row">

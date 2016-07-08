@@ -24,7 +24,7 @@ export default  class TwityNav extends React.Component {
         </NavItem>
         
         <NavItem eventKey={10}>
-          <TwityNavDropMenu img={this.props.img} />
+          <TwityNavDropMenu img={this.props.img} name={this.props.name} />
          </NavItem>
 
         <NavItem eventKey={2} href="#" id="twitButton">

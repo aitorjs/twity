@@ -10,7 +10,7 @@ export default class TwityNavDropMenu extends React.Component {
 
       <Dropdown.Menu className="sdropdown-menu">
         <MenuItem eventKey={0} href="#">
-          <strong>Aitor Ibañez</strong><br/>Profila ikusi
+          <strong>{this.props.name}</strong><br/>Profila ikusi
         </MenuItem>
         <MenuItem divider />
         <MenuItem eventKey={1} href="#">Zerrendak</MenuItem>
