@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+// import axios from 'axios';
 
 import TwityNavBootstrap from './TwityNavBootstrap';
 import TwityProfileHeaderCard from './TwityProfileHeaderCard/TwityProfileHeaderCard';
@@ -12,8 +12,6 @@ export default class TwityApp extends React.Component {
     this.state = { d: null }
     this.read = this.read.bind(this);
   }
-
-
 
   async read() {
     try {
