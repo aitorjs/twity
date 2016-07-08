@@ -1,7 +1,7 @@
 import React from 'react';
 // import axios from 'axios';
 
-import TwityNavBootstrap from './TwityNavBootstrap';
+import TwityNav from './TwityNav/TwityNav';
 import TwityProfileHeaderCard from './TwityProfileHeaderCard/TwityProfileHeaderCard';
 
 import data from './../data.json';
@@ -36,7 +36,7 @@ export default class TwityApp extends React.Component {
 
     return <div>
       <br/><br/><br/><br/>
-      <TwityNavBootstrap img={this.state.d.user.img} />
+      <TwityNav img={this.state.d.user.img} />
       <section id="header"></section>
       <div className="container">
         <div className="row">
