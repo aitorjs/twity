@@ -40,7 +40,5 @@ export default class TwityApp extends React.Component {
 
       {React.cloneElement(this.props.children, {d: data})}
     </div>
-
-    style 
   }
 }

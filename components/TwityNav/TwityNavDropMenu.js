@@ -2,10 +2,17 @@ import React from 'react';
 import { MenuItem, Dropdown } from 'react-bootstrap';
 
 export default class TwityNavDropMenu extends React.Component { 
-  render() { return  <div>
+  render() { 
+
+  var avatar = {
+    height: '32',
+    width: '32'
+  };
+
+    return  <div>
     <Dropdown id="dropdownMenu2">
       <Dropdown.Toggle noCaret>
-        <img src={this.props.img} height="32" width="32" />
+        <img style={avatar} src={this.props.img} />
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="sdropdown-menu">
