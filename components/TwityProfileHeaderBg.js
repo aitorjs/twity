@@ -1,5 +1,6 @@
 import React from 'react';
 
+import TwityAvatar from './TwityAvatar';
 
 export default class TwityProfileHeaderBg extends React.Component {
   render() {
@@ -20,7 +21,7 @@ var profileBackgroundImg = {
 };
 
     return  <div id="profile-background" style={profileBackground}>
-    <img style={profileBackgroundImg} src={this.props.imgBig} />
+      <TwityAvatar style={profileBackgroundImg} src={this.props.imgBig} />
   </div>
   }
 }
