@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class TwityHeaderProfile extends React.Component {	
+import TwityProfileHeaderBg from './TwityProfileHeaderBg';
+
+export default class TwityProfileHeader extends React.Component {	
 	render() { 
 		return <div>
-      <div id="profile-background">
-        <img src="https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_400x400.jpeg" />
-      </div>
+      <TwityProfileHeaderBg bg={this.props.bg} imgBig={this.props.imgBig} />
       <div className="row" id="profile-numbers">
       	<div className="col-md-6 col-md-offset-3">
         		<ul>

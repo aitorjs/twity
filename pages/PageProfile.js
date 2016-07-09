@@ -1,12 +1,14 @@
 import React from 'react';
 
 import TwityProfileHeaderCard from './../components/TwityProfileHeaderCard/TwityProfileHeaderCard';
-import TwityHeaderProfile from './../components/TwityHeaderProfile';
+import TwityProfileHeader from './../components/TwityProfileHeader';
 
 export default class PageProfile extends React.Component {	
 	render() { 
 		return <div>
-			<TwityHeaderProfile />
+			<TwityProfileHeader 
+				bg={this.props.d.user.bg} 
+				imgBig={this.props.d.user.imgBig} />
 			<div className="container">
     		<div className="row">
       			<div className="col-sm-3">

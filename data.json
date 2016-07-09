@@ -5,8 +5,10 @@
   	"screenname": "aitoribanez_",
   	"bio": "BIO",
   	"img": "https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_normal.jpeg",
+    "imgBig": "https://pbs.twimg.com/profile_images/565680017737125888/ad1qqkg0_400x400.jpeg",
   	"location": "Donostia",
   	"url": "aitoribanez.com",
-  	"joindate": "now"
+  	"joindate": "now",
+    "bg": "https://pbs.twimg.com/profile_banners/89010853/1456433242/1500x500"
 	}
 }
