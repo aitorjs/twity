@@ -36,15 +36,9 @@ export default class TwityApp extends React.Component {
 
     return <div>
       <br/><br/><br/><br/>
-      <TwityNav img={this.state.d.user.img} name={this.state.d.user.name}/>
-      <section id="header"></section>
-      <div className="container">
-        <div className="row">
-          <section id="main-container">
-          {React.cloneElement(this.props.children, {d: data})}
-          </section>
-        </div>
-      </div>
+      <TwityNav img={this.state.d.user.img} name={this.state.d.user.name} />
+
+      {React.cloneElement(this.props.children, {d: data})}
     </div>
   }
 }

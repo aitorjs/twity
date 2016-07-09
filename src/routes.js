@@ -16,8 +16,8 @@ export default
   <Router history={hashHistory}>
     <Route component={TwityApp}>
       <Route path="/" component={PageHome} />
-      <Route path="profile" component={PageProfile} />
       <Route path="user" component={User} />
-                  <Route path="*" component={PageHome} />
-                </Route>
-              </Router>
+      <Route path="profile" component={PageProfile} />
+    </Route>
+    <Route path="*" component={PageHome} />
+  </Router>
