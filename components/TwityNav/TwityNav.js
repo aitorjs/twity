@@ -37,3 +37,8 @@ export default  class TwityNav extends React.Component {
   </div>
 	}
 }
+
+TwityNav.propTypes = { 
+  img: React.PropTypes.string,
+  name: React.PropTypes.string
+}

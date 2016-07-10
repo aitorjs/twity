@@ -15,4 +15,4 @@ export default class TwityProfileHeaderCardUrl extends React.Component {
 	}
 }
 
-
+TwityProfileHeaderCardUrl.propTypes = { url: React.PropTypes.string }

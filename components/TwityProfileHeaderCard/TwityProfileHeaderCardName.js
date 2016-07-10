@@ -12,4 +12,4 @@ export default class TwityProfileHeaderCardName extends React.Component {
 	}
 }
 
-
+TwityProfileHeaderCardName.propTypes = { name: React.PropTypes.string }

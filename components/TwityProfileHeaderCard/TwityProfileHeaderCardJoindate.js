@@ -15,4 +15,4 @@ export default class TwityProfileHeaderCardJoindate extends React.Component {
 	}
 }
 
-
+TwityProfileHeaderCardJoindate.propTypes = { joindate: React.PropTypes.string };

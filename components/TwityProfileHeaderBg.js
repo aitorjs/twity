@@ -26,4 +26,9 @@ var profileBackgroundImg = {
   }
 }
 
+TwityProfileHeaderBg.propTypes = { 
+  bg: React.PropTypes.string,
+  imgBig: React.PropTypes.string
+}
+
 

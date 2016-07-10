@@ -12,4 +12,4 @@ export default class TwityProfileHeaderCardScreenname extends React.Component {
 	}
 }
 
-
+TwityProfileHeaderCardScreenname.propTypes = { screenname: React.PropTypes.string }

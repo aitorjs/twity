@@ -19,3 +19,8 @@ export default class TwityProfileHeader extends React.Component {
     </div>
 	}
 }
+
+TwityProfileHeader.propTypes = { 
+  bg: React.PropTypes.string,
+  imgBig: React.PropTypes.string
+}

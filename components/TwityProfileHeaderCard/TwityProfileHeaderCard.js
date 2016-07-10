@@ -27,4 +27,4 @@ export default class TwityProfileHeaderCard extends React.Component {
   }
 }
 
-
+TwityProfileHeaderCard.propTypes = { user: React.PropTypes.object }

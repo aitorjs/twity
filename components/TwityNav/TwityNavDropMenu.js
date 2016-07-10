@@ -34,11 +34,9 @@ export default class TwityNavDropMenu extends React.Component {
     </Dropdown>
   </div>
   }
-} 
+}
 
-
-
-
-
-
-
+TwityNavDropMenu.propTypes = { 
+  img: React.PropTypes.string,
+  name: React.PropTypes.string
+}

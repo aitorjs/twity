@@ -15,4 +15,4 @@ export default class TwityProfileHeaderCardLocation extends React.Component {
 	}
 }
 
-
+TwityProfileHeaderCardLocation.propTypes = { location: React.PropTypes.string };
