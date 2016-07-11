@@ -6,7 +6,7 @@
   "scripts": {
     "build": "browserify app.js > public/build.js -t babelify",
     "deploy": "npm run build && gulp dev",
-    "lint": "standard 'components/*.js' 'components/**/*.js' 'pages/*.js' '*.js'"
+    "lint": "standard 'components/*.js' 'components/**/*.js' 'pages/*.js' '*.js' 'src/*.js'"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
