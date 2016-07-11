@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "browserify app.js > public/build.js -t babelify",
-    "deploy": "npm run build && gulp dev"
+    "deploy": "npm run build && gulp dev",
+    "lint": "standard 'components/*.js' 'components/**/*.js' 'pages/*.js' '*.js'"
   },
   "author": "Aitor Ibañez",
   "license": "ISC",
@@ -24,6 +25,7 @@
     "gulp-concat": "^2.6.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
+    "standard": "^7.1.2",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
   },

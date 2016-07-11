@@ -1,8 +1,6 @@
-import 'babel-polyfill';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, hashHistory } from 'react-router';
+import 'babel-polyfill'
+import ReactDOM from 'react-dom'
 
-import routes from './src/routes';
+import routes from './src/routes'
 
-ReactDOM.render(routes, document.getElementById('container'));
+ReactDOM.render(routes, document.getElementById('container'))
