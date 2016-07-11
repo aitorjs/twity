@@ -8,9 +8,13 @@
     "deploy": "npm run build && gulp dev",
     "lint": "standard 'components/*.js' 'components/**/*.js' 'pages/*.js' '*.js' 'src/*.js'"
   },
-  "author": "Aitor Ibañez",
-  "license": "ISC",
+  "standard": {
+    "parser": "babel-eslint"
+  },
+  "author": "Aitor Ibañez <freelance@aitoribanez.com>",
+  "license": "MIT",
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "babel-plugin-syntax-async-functions": "^6.8.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-async-to-module-method": "^6.8.0",
