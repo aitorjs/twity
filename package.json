@@ -39,7 +39,7 @@
     "jquery": "^2.2.4",
     "react": "^15.1.0",
     "react-bootstrap": "^0.29.5",
-    "react-dom": "^15.1.0",
+    "react-dom": "^16.0.1",
     "react-router": "^2.5.2"
   }
 }
